@@ -1,0 +1,8 @@
+{
+  "name": "phototag",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "6ec98b27"
+}
