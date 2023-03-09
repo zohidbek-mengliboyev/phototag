@@ -10,3 +10,6 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
+
+// eslint-disable-next-line @typescript-eslint/dot-notation
+(<any>window)['CESIUM_BASE_URL'] = '/assets/cesium/';
