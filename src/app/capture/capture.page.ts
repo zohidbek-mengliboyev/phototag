@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PhotoService } from '../photo.service';
 
 @Component({
   selector: 'app-capture',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CapturePage implements OnInit {
 
-  constructor() { }
+  constructor(private photoService: PhotoService) { }
 
   ngOnInit() {
+  }
+
+  openCamera() {
+    this.photoService.takePhoto();
   }
 
 }
